@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class Product:
 
     def __init__(self, name, price, quantity):
@@ -47,7 +46,7 @@ class Product:
         # returns total price of purchase and updates the product in stock
         if not self.active:
             raise ValueError(f"{self.name} is not available for purchase")
-        if quantity <=0:
+        if quantity <= 0:
             raise ValueError("quantity should be greater than zero. ")
         if quantity > self.quantity:
             raise ValueError(f"Insufficient quantity of {self.name} available.")
@@ -60,7 +59,7 @@ class Product:
 
         return total_price
 
-=======
+
 class Product:
 
     def __init__(self, name, price, quantity):
@@ -109,7 +108,7 @@ class Product:
         # returns total price of purchase and updates the product in stock
         if not self.active:
             raise ValueError(f"{self.name} is not available for purchase")
-        if quantity <=0:
+        if quantity <= 0:
             raise ValueError("quantity should be greater than zero. ")
         if quantity > self.quantity:
             raise ValueError(f"Insufficient quantity of {self.name} available.")
@@ -121,5 +120,3 @@ class Product:
             self.deactivate()
 
         return total_price
-
->>>>>>> 9143579f6ba2570d7ef765e1f3a6f8dac7d201e4
